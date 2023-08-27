@@ -15,9 +15,6 @@ import nuke
 import nukescripts
 import os
 
-
-
-
 def AutoProjectSettings():
 
 	print ('')
@@ -635,7 +632,6 @@ def AutoProjectSettings():
 			print ('..................................')
 			print ('')
 
-
 			# End Save file #
 			#################
 
@@ -680,11 +676,4 @@ def SaveandClose():
 	nuke.scriptClear()
 
 	AutoProjectSettings()
-
-
-
-
-#Add to menu and assign shortcut key
-nodeMenu = nuke.menu('Nuke').findItem('File')
-nodeMenu.addCommand('New Comp from Footage', 'SaveandClose()', 'ctrl+shift+r')
 
